@@ -3,6 +3,19 @@
 .root{
     display: flex;
     width: 100%;
+    position: relative;
+
+    .x-icon-button{
+        position: absolute;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: $dark;
+        cursor: pointer;
+        right: -17px; // half of width
+        top: -17px; // this has to be half of height
+
+    }
 }
 
 .budget-item{
