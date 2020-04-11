@@ -44,3 +44,14 @@
 
     }
 }
+
+.add-item{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    .add-item-contain{
+        width: 680px;
+        height: 50px;
+    }
+}
