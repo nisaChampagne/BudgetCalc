@@ -4,7 +4,13 @@
     display: flex;
     width: 100%;
     position: relative;
-
+    
+    &:hover{
+        .x-icon-button{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
     .x-icon-button{
         position: absolute;
         height: 34px;
@@ -14,6 +20,15 @@
         cursor: pointer;
         right: -17px; // half of width
         top: -17px; // this has to be half of height
+
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+
+        transform: scale(0);
+        opacity: 0;
+
+        &:hover{
+            transform: scale(1.2);
+        }
 
     }
 }
