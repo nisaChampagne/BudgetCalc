@@ -55,6 +55,10 @@
         padding: 5px;
         border-radius: 3px;
     }
+
+    &:hover{
+        background-color: darken($color: $light-grey, $amount: 2%);
+    }
 }
 
 .expense{
