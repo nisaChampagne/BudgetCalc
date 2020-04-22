@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { BudgetItem } from 'src/shared/models/budget-item.model';
+import { MatSlider } from '@angular/material/slider';
 
 @Component({
   selector: 'app-budget-item-list',
@@ -17,6 +18,10 @@ export class BudgetItemListComponent implements OnInit {
 
   onDelete(item: BudgetItem){
     this.delete.emit(item)
+  }
+
+  onCardClick(){
+    // show the edit modal
   }
 
 }
